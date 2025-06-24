@@ -1,0 +1,25 @@
+
+
+section{
+    width: min(1700px, 100%);
+    margin: 0 auto;
+    gap: 10px;
+    columns:4 400px;
+}
+section img{
+    width: 100%;
+}
+
+/* section:hover> :not(:hover)  {
+    filter: blur(.5px);
+    -webkit-filter: blur(.5px);
+    opacity: .5;
+} */
+section img {
+    /* transition: filter 0.3s ease, opacity 0.3s ease; */
+}
+
+section:hover img:not(:hover) {
+    filter: blur(0.5px);
+    opacity: 0.5;
+}
